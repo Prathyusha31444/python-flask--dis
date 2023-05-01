@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="static/CSS/contactus.css">
+	<title>STUDENT HOUSING IN TAMPA</title>
+</head>
+  
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href=" {{url_for('home')}}" class="logo-link">STUDENT HOUSING</a>
+        </div>
+
+        <ul class="nav-links">
+          <li class="navbar-item"><a class="navbar-link" href="{{url_for('home')}}">HOME</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="{{url_for('signin')}}" >SIGN IN</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="{{url_for('search')}}" >SEARCH</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="{{url_for('aboutus')}}">ABOUT US</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="{{url_for('contactus')}}">CONTACT US</a></li>
+        </ul>
+
+        
+    </nav>
+
+    <nav class="mobile-nav">
+      <ul class="nav-links">
+        <li class="navbar-item"><a class="navbar-link" href="{{url_for('home')}}">HOME</a></li>
+				<li class="navbar-item"><a class="navbar-link" href="{{url_for('signin')}}" >SIGN IN</a></li>
+				<li class="navbar-item"><a class="navbar-link" href="{{url_for('search')}}" >SEARCH</a></li>
+				<li class="navbar-item"><a class="navbar-link" href="{{url_for('aboutus')}}">ABOUT US</a></li>
+				<li class="navbar-item"><a class="navbar-link" href="{{url_for('contactus')}}">CONTACT US</a></li>
+			  </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</header>
+
+	<div class="contactus">
+	<div id="contactus">
+  <h2>Contact Us</h2>
+  <h2>STUDENT HOUSING OF TAMPA</h2>
+  <p>If you have any questions or concerns, please feel free to reach out to us:</p>
+  <ul>
+    <li>Address: 14233 Efowler Ave, Tampa, FL 33613</li>
+    <li>Email: info@studentaccommodation.com</li>
+    <li>Phone: 813-123-4567</li>
+  </ul>
+  <form id="contactform" method="POST" action="{{ url_for('contactus') }}">
+    <label for="name">Name:</label>
+    <input type="text" id="username" name="name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" cols="10"></textarea>
+
+    <button class="btn" type="submit">Submit</button></a>
+  </form>
+</div>
+</div>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3><img class="logo" src="static/images/logo.png" alt="logo"> Student Housing in Tampa</h3>
+        <p>© 2023 Student Housing Tampa. All rights reserved.</p>
+      </div>
+      <div class="col-md-3">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="{{url_for('contactus')}}">Email</a></li>
+				<li><a href="{{url_for('contactus')}}">Phone</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="static/JS/contactus_js.js"></script>
+</body>
+</html>

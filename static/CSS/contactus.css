@@ -1,0 +1,465 @@
+body {
+    margin: 0;
+    padding-top: 30px;
+    height: 100px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: url("../images/contact.jpg");
+    background-position: center;
+    width: 100%;
+  }
+
+  
+  /****************** Header*********************/
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+body {
+    font-family: 'poppins,sans-serif';
+    min-height: 100vh;
+    margin: 0;
+    font-size: 15px;
+    width: 100%;
+    line-height: 1.5;
+}
+
+
+.main {
+    padding-top: 15px;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    background: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    z-index: 999;
+}
+.navbar .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.navbar .logo a {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: ivory;
+    font-family:cursive;
+    /* margin-left: 20px; */
+}
+.navbar .logo a.active {
+    color: #000000;
+}
+.navbar ul {
+    display: flex;
+    margin-right: 5vw;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+.navbar ul li {
+    background: #fff;
+    position: relative;
+}
+.navbar ul li a {
+    color: #000000 ;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    font-family:cursive;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+.navbar ul li a:hover {
+    background: #d3d3d3;
+    color: #E9F1FA;
+}
+.navbar ul li a.active {
+    background: #d3d3d3;
+    color: #E9F1FA;
+}
+
+.mobile-nav {
+    display: none;
+    margin-top: 80px;
+    font-size: small;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 999;
+    font-family:cursive;
+}
+.mobile-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#a9a9a9;
+}
+.mobile-nav li {
+    float: left;
+}
+.mobile-nav li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-family: cursive;
+}
+.mobile-nav li a:hover {
+    background-color: #000000;
+}
+.mobile-nav li a.active {
+    background-color: #000000;
+}
+
+/* Mobile and Tab view */
+@media screen and (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+    }
+    .navbar .hamburger {
+        display: block;
+    }
+    .mobile-nav {
+        display: block;
+    }
+    .mobile-nav ul li a:active {
+        background: #00ABE4;
+        color: #fff;
+    }
+
+    .post-main-cont{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* desktop view */
+@media screen and (max-width: 1024px) {
+    .post-main-cont{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.activate{
+    background: #00a7ea;
+}
+  /**************** header ends *****************/
+    /******************** Footer******************************/
+/* Default styles for footer */
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto; 
+  background-color: #c7c5c5;
+  color: #060606;
+  padding: 0px;
+  display: flex; /* added */
+  justify-content: center; /* added */
+  align-items: center; /* added */
+  z-index: 999; /* added */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex; /* added */
+  justify-content: space-between; /* added */
+  align-items: center; /* added */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%; /* added */
+}
+
+.col-md-3 {
+  flex: 0 0 33.33%; /* changed from 50% */
+  max-width: 33.33%; /* changed from 50% */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.col-md-6 {
+  flex: 0 0 33.33%; 
+  max-width: 33.33%; 
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+h3,
+h4 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333;
+}
+
+.logo {
+  width: 50px;
+  height: 40px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 768px) {
+  footer {
+    height: auto;
+    padding: 20px 0;
+  }
+  
+  .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 1200px) {
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Styles for all screens */
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+  }
+}
+/***************************footer end***************************************/
+
+  
+.contactus {
+  margin-top: 100px;
+  margin: 0 auto;
+  width: 40%;
+  text-align: center;
+  background-color: black;
+  opacity: 70%;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  border-radius: 20PX;
+  font-weight: bolder;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.contactus title  {
+  margin-top: 150px;
+  text-align: center;
+  color: rgb(128, 66, 210);
+  font-size: 20px;
+  font-style: bolder;
+}
+.contactus h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contactus ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.contactus li {
+  margin-bottom: 5px;
+}
+
+.contactus label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.contactus input,
+.contactus textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #0a0909;
+  font-size: 16px;
+}
+
+.contactus .btn {
+  background-color: rgb(0, 145, 7);
+  border: 2px solid black;
+  border-radius: 30px;
+  font-size: 20px;
+  color: rgb(206, 203, 203);
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 10px;
+  width: 150px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.contactus .btn:hover {
+  background-color: #00a33c;
+}
+
+.contactus h2 span {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+  background-position: top;
+  }
+  .contactus {
+  width: 80%;
+  margin-top: 150px;
+  }
+  
+  .contactus label {
+  font-size: 18px;
+  }
+  
+  .contactus input,
+  .contactus textarea {
+  width: 80%;
+  }
+
+  
+  }
+  
+  @media screen and (min-width: 501px) and (max-width: 767px) {
+  
+  .contactus {
+  width: 80%;
+  margin-top: 150px;
+  }
+  
+  .contactus label {
+  font-size: 18px;
+  }
+  
+  .contactus input,
+  .contactus textarea {
+  width: 80%;
+  }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .contactus {
+    width: 60%;
+    }
+    
+    .contactus label {
+    font-size: 18px;
+    }
+    
+    .contactus input,
+    .contactus textarea {
+    width: 90%;
+    }
+    
+    .contactus .btn {
+    font-size: 18px;
+    width: 130px;
+    padding: 8px 10px;
+    }
+    }
+    
+    @media screen and (min-width: 992px) {
+  
+    .contactus {
+    width: 50%;
+    }
+    
+    .contactus title {
+    margin-top: 70px;
+    font-size: 25px;
+    }
+    
+    .contactus h2 {
+    font-size: 22px;
+    }
+    
+    .contactus label {
+    font-size: 22px;
+    }
+    
+    .contactus input,
+    .contactus textarea {
+    width: 70%;
+    }
+    
+    .contactus .btn {
+    font-size: 22px;
+    width: 150px;
+    padding: 10px 15px;
+    }
+    }

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="static/CSS/advsearch.css" />
+        <script src="https://kit.fontawesome.com/4d3bbd6255.js" crossorigin="anonymous"></script>
+        <title>STUDENT HOUSING IN TAMPA</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="{{url_for('home')}}" class="logo-link">STUDENT HOUSING</a>
+                </div>
+    
+                <ul class="nav-links">
+                    <li class="navbar-item"><a class="navbar-link" href="{{url_for('home')}}">HOME</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="{{url_for('signup')}}" >SIGN IN</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="{{url_for('search')}}" >SEARCH</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="{{url_for('aboutus')}}">ABOUT US</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="{{url_for('contactus')}}">CONTACT US</a></li>
+                 </ul>
+
+                
+            </nav>
+
+            <nav class="mobile-nav">
+                <ul class="nav-links">
+                    <li class="navbar-item"><a class="navbar-link" href="{{url_for('home')}}">HOME</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="{{url_for('signin')}}" >SIGN IN</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="{{url_for('search')}}" >SEARCH</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="{{url_for('aboutus')}}">ABOUT US</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="{{url_for('contactus')}}">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </header>
+   <div clas="main-cointainer">
+        <h2>STUDENT HOUSING IN TAMPA</h2>
+        <div class="filter-cointainer">
+            <div class="cat-head">
+                <ul>
+                    <div class="cat-title" id="all">
+                        <li>APARTMENT</li>
+                        <span><i class="fa-solid fa-house"></i></span>
+                    </div>
+                    <div class="cat-title" id="furnished">
+                        <li>FURNISHED</li>
+                        <span><i class="fa-solid fa-couch"></i></span>
+                    </div>
+                    <div class="cat-title" id="pets">
+                        <li>PETS</li>
+                        <span><i class="fa-solid fa-dog"></i></span>
+                    </div>
+                    <div class="cat-title" id="studio">
+                        <li>STUDIO</li>
+                        <span><i class="fa-solid fa-house"></i></span>
+                    </div>
+                    <div class="cat-title" id="onebr">
+                        <li>1BR</li>
+                        <span><i class="fa-solid fa-house"></i></span>
+                    </div>
+                    <div class="cat-title" id="twobr">
+                        <li>2BR</li>
+                        <span><i class="fa-solid fa-house"></i></span>
+                    </div>
+                    <div class="cat-title" id="threebr">
+                        <li>3BR</li>
+                        <span><i class="fa-solid fa-house"></i></span>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="post-collect">
+                <div class="post-main-cont">
+                    <!-- post-->
+                    <div class="all apartment"> 
+                        <div class="post-img">
+                            <a href="https://www.udr.com/tampa-apartments/university-center/cambridge-woods/"><img src="static/images/CambridgeWoods.jpg" width="200" height="280" alt="post"></a>
+                            <span class="category-name">Apartment</span>
+                        </div>
+
+                        <div class="post-cont">
+                            <h2>Cambridge Woods</h2>
+                            <p>Cambridge Woods is a residential area near the University of South Florida (USF) campus in Tampa, Florida. It provides affordable living alternatives, an accessible location, and amenities
+                                 such as a community pool and exercise center, making it an appealing choice for USF students. Additionally, the neighborhood's 
+                                pet-friendly policy is advantageous for students who own pets. Living at Cambridge Woods provides students with a comfortable,
+                                 community-oriented environment and the opportunity to form relationships with their neighbors,
+                                 all while being only a short distance from the university.</p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+					
+					<!-- post-->
+                    <div class="all apartment"> 
+                        <div class="post-img">
+                            <a href="https://www.eaglespointapts.com/?gad=1&gclid=CjwKCAjw6IiiBhAOEiwALNqncU7gl-05BjW3A22ciHAiJf4E_7OQOzBmIKalaDp2V0nrUoyBf7RjjBoCHa4QAvD_BwE"><img src="static/images/EaglesPointApartments.jpg" width="200" height="280" alt="post"></a>
+                            <span class="category-name">Apartment</span>
+                        </div>
+
+                        <div class="post-cont">
+                            <h2>Eagles Point</h2>
+                            <p>Eagles Point is an off-campus community near the University of South Florida in Tampa, Florida that offers a variety of benefits to students. 
+                                A convenient location, and amenities such as a clubhouse, exercise center, pool, 
+                                 and tennis court. Eagles Point also offers a shuttle service to campus, making it a fantastic choice for
+                                 students who value convenience and convenient access to classes. Living in Eagles Point gives students with a welcoming and supportive community,
+                                 as well as a variety of amenities tailored to their specific requirements and lifestyle preferences.  </p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+                    <!-- post-->
+                    <div class="all apartment"> 
+                        <div class="post-img">
+                            <a href="https://oakrambletampa.com/"><img src="static/images/OakRambleApartments.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">Apartment</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Oak Ramble</h2>
+                            <p>Oak Ramble is a unique off-campus community near the University of Tampa in Tampa, Florida. The spacious townhome-style apartments with separate patios give students with
+                                 privacy and outdoor space. In addition, Oak Ramble is noted for its nice neighborhood and inviting population of international students. Oak Ramble 
+                                provides students with a comfortable and modern living environment, as well as a variety of amenities that suit to their needs and lifestyle preferences.
+                                Pet owners will like the on-site dog park, and the neighborhood also includes a clubhouse and pool for leisure and socializing.</p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+                    <!-- post-->
+                    <div class="all apartment"> 
+                        <div class="post-img">
+                            <a href="https://www.apartments.com/sunstone-palms-apartments-tampa-fl/kjrgskc/"><img src="static/images/SunStoneApartments.jpg" width="200" height="280"alt="cw"></a>
+                            <span class="category-name">Apartment</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Sunstone Palms</h2>
+                            <p>Sunstone Palms is an off-campus neighborhood in Tampa, Florida that provides University of South Florida (USF) students with a convenient living experience. While Sunstone Palms is
+                                 a little further away from school than other communities, it does have USF bus service for quick commuting to and from courses. The apartments
+                                 are modern and large, with a variety of floor layouts to accommodate a variety of lifestyles and interests. The community also has amenities such as a resort-style pool, fitness center, and
+                                 clubhouse for leisure and socialization. Sunstone Palms offers a comfortable and convenient housing environment for USF off-campus students.
+                                  Sunstone Palms also offers a variety of housing options to Students.</p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+                    <!-- post-->
+                    <div class="all apartment"> 
+                        <div class="post-img">
+                            <a href="https://www.thelivingstontampa.com/"><img src="static/images/Livingston.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">Apartment</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Livingston</h2>
+                            <p>Livingston is a Tampa, Florida off-campus housing complex that offers an outstanding living experience to University of South Florida (USF) students. The 
+                                apartments are spacious, modern, and fully equipped, with all of the conveniences essential to make students feel at ease. A game room,
+                                 clubhouse, and fitness facility are among the community shared facilities for socializing and studying. Livingston is also pet-friendly, allowing students to
+                                 bring their canine companions with them. The community is strategically located near USF, and the Bull Runner shuttle service provides quick access to school.
+                                 Overall, Livingston provides a nice and convenient living environment for USF students seeking off-campus housing.</p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+                    <!-- post-->
+                    <div class="all furnished"> 
+                        <div class="post-img">
+                            <a href="https://www.thelivingstontampa.com/"><img src="static/images/Livingston.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">Furnished</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Livingston</h2>
+                            <p>Livingston is a Tampa, Florida off-campus housing complex that offers an outstanding living experience to University of South Florida (USF) students. The 
+                                apartments are spacious, modern, and fully equipped, with all of the conveniences essential to make students feel at ease. A game room,
+                                 clubhouse, and fitness facility are among the community shared facilities for socializing and studying. Livingston is also pet-friendly, allowing students to
+                                 bring their canine companions with them. The community is strategically located near USF, and the Bull Runner shuttle service provides quick access to school.
+                                 Overall, Livingston provides a nice and convenient living environment for USF students seeking off-campus housing.</p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+                     <!-- post-->
+                     <div class="all furnished"> 
+                        <div class="post-img">
+                            <a href="https://www.eaglespointapts.com/?gad=1&gclid=CjwKCAjw6IiiBhAOEiwALNqncU7gl-05BjW3A22ciHAiJf4E_7OQOzBmIKalaDp2V0nrUoyBf7RjjBoCHa4QAvD_BwE"><img src="static/images/EaglesPointApartments.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">Furnished</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Eagles Point</h2>
+                            <p>Eagles Point is an off-campus community near the University of South Florida in Tampa, Florida that offers a variety of benefits to students. 
+                                It offers fully-furnished apartments to students. The apartments come with everything students need, including a bed, couch, desk, and kitchen appliances. These are very useful for students. A convenient location, and amenities such as a clubhouse, exercise center, pool, 
+                                 and tennis court. Eagles Point also offers a shuttle service to campus, making it a fantastic choice for
+                                 students who value convenience and convenient access to classes. Living in Eagles Point gives students with a welcoming and supportive community,
+                                 as well as a variety of amenities tailored to their specific requirements and lifestyle preferences. </p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+                    
+
+                    <!-- post-->
+                    <div class="all studio"> 
+                        <div class="post-img">
+                            <a href="https://www.thelivingstontampa.com/"><img src="static/images/Livingston.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">studio</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Livingston</h2>
+                            <p>Livingston Apartments provide studio apartments for University of South Florida (USF) students seeking pleasant and convenient off-campus housing. Students
+                                 can enjoy the peace and independence of their own place while remaining a part of a bigger student community with a variety of amenities and a supportive environment.
+                                 Livingston studio flats are an excellent choice for students who value a calm and concentrated environment for studying and personal leisure. </p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+                     <!-- post-->
+                     <div class="all studio"> 
+                        <div class="post-img">
+                            <a href="https://oakrambletampa.com/"><img src="static/images/OakRambleApartments.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">studio</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Oak Ramble</h2>
+                            <p>Oak Ramble is a unique off-campus community near the University of Tampa in Tampa, Florida. The spacious townhome-style apartments with separate patios give students with
+                                 privacy and outdoor space. In addition, Oak Ramble is noted for its nice neighborhood and inviting population of international students. Oak Ramble 
+                                provides students with a comfortable and modern living environment, as well as a variety of amenities that suit to their needs and lifestyle preferences.
+                                Pet owners will like the on-site dog park, and the neighborhood also includes a clubhouse and pool for leisure and socializing.</p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+                    <!-- post-->
+                    <div class="all studio"> 
+                        <div class="post-img">
+                            <a href="https://www.udr.com/tampa-apartments/university-center/cambridge-woods/apartments-pricing/#/?beds=3"><img src="static/images/CambridgeWoods.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">studio</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Cambridge Woods</h2>
+                            <p>Cambridge Woods also offers studio flats, which are ideal for students looking for a cozy and simple living arrangement. The studios have modern
+                                 finishes and enough of natural light to make for a pleasant and inviting living area. Furthermore, community amenities such as a
+                                 fitness center and a pool provide students with several options to keep active and healthy without having to leave their own backyard.</p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+					
+					
+
+                    <!-- post-->
+                    <div class="all pets"> 
+                        <div class="post-img">
+                            <a href="https://www.eaglespointapts.com/?gad=1&gclid=CjwKCAjw6IiiBhAOEiwALNqncU7gl-05BjW3A22ciHAiJf4E_7OQOzBmIKalaDp2V0nrUoyBf7RjjBoCHa4QAvD_BwE"><img src="static/images/EaglesPointApartments.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">Pets</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Eagles Point</h2>
+                            <p>Eagles Point welcomes pets, making it a pet-friendly community in Tampa, Florida, near the University of South Florida. Students who own
+                                 pets can benefit from the ease of living close to campus while still being able to bring their pets with them.
+                                 The communitys pet policy creates a pleasant environment for pet owners, allowing them to feel at ease while attending USF lectures. </p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+					
+					 <!-- post-->
+                    <div class="all pets"> 
+                        <div class="post-img">
+                            <a href="https://www.thelivingstontampa.com/"><img src="static/images/Livingston.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">Pets</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Livingston</h2>
+                            <p>Livingston is Pet-friendly apartments allow you to bring your furry friends with you when you move. They often offer amenities such as dog parks, pet grooming
+                                 stations, and pet-friendly events. Livingston apartments offer high-end amenities such as swimming pools, fitness centers, concierge services, and other luxurious features
+                                 that can make your stay more comfortable and enjoyable. They are often located in desirable neighborhoods and offer a more upscale living experience.</p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+                    <!-- post-->
+                    <div class="all pets"> 
+                        <div class="post-img">
+                            <a href="https://www.udr.com/tampa-apartments/university-center/cambridge-woods/"><img src="static/images/CambridgeWoods.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">Pets</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Cambridge Woods</h2>
+                            <p>Cambridge Woods is pet-friendly policy is advantageous for students who own pets and is a residential area near the University of South Florida (USF) campus in Tampa, Florida. It provides affordable living alternatives, an accessible location, and amenities
+                                such as a community pool and exercise center, making it an appealing choice for USF students. Living at Cambridge Woods provides students with a comfortable,
+                                community-oriented environment and the opportunity to form relationships with their neighbors,
+                                all while being only a short distance from the university.</p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+					
+					
+
+                    <!-- post-->
+                    <div class="all onebr"> 
+                        <div class="post-img">
+                            <a href="https://www.thelivingstontampa.com/"><img src="static/images/Livingston.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">1BR</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Livingston</h2>
+                            <p>Livingston offers 1-bedroom apartments that are perfect for students who desire privacy and comfort. The 
+                                apartments are spacious, modern, and fully equipped, with all of the conveniences essential to make students feel at ease. A game room,
+                                 clubhouse, and fitness facility are among the community shared facilities for socializing and studying. Livingston is also pet-friendly, allowing students to
+                                 bring their canine companions with them. The community is strategically located near USF, and the Bull Runner shuttle service provides quick access to school.
+                                 Overall, Livingston provides a nice and convenient living environment for USF students seeking off-campus housing.</p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+					
+					<!-- post-->
+                    <div class="all onebr"> 
+                        <div class="post-img">
+                            <a href="https://www.eaglespointapts.com/?gad=1&gclid=CjwKCAjw6IiiBhAOEiwALNqncU7gl-05BjW3A22ciHAiJf4E_7OQOzBmIKalaDp2V0nrUoyBf7RjjBoCHa4QAvD_BwE"><img src="static/images/EaglesPointApartments.jpg" width="200" height="280" alt="post"></a>
+                            <span class="category-name">1BR</span>
+                        </div>
+
+                        <div class="post-cont">
+                            <h2>Eagles Point</h2>
+                            <p>Eagles Point has 1-bedroom apartments that are ideal for students looking for solitude and comfort. 
+                                A convenient location, and amenities such as a clubhouse, exercise center, pool, 
+                                 and tennis court. Eagles Point also offers a shuttle service to campus, making it a fantastic choice for
+                                 students who value convenience and convenient access to classes. Living in Eagles Point gives students with a welcoming and supportive community,
+                                 as well as a variety of amenities tailored to their specific requirements and lifestyle preferences.  </p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+                      <!-- post-->
+                      <div class="all onebr"> 
+                        <div class="post-img">
+                            <a href="https://www.udr.com/tampa-apartments/university-center/cambridge-woods/apartments-pricing/#/?beds=3"><img src="static/images/CambridgeWoods.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">1BR</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Cambridge Woods</h2>
+                            <p>Students who want solitude and comfort might find the ideal living space at Cambridge Woods one-bedroom flats. The apartments are completely 
+                                furnished and have a full-sized bed, a private bathroom, a living room, and a kitchen that is fully functional. Students can work from
+                                 home or study in the ideal setting thanks to the apartments extensive storage space and built-in desk. Cambridge Woods provides students 
+                                with a comfortable living environment thanks to its close proximity to the University of South Florida and its pet-friendly policy.</p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+                    
+                    <!-- post-->
+                    <div class="all onebr"> 
+                        <div class="post-img">
+                            <a href="https://www.apartments.com/sunstone-palms-apartments-tampa-fl/kjrgskc/"><img src="static/images/SunStoneApartments.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">1BR</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Sunstone Palms</h2>
+                            <p>Students at USF who prefer privacy and comfort can choose from one-bedroom apartments at Sunstone Palms. With a full-sized bed, a private bathroom, 
+                                a living area, and a fully functional kitchen, these apartments have contemporary decor and are fully furnished. There is plenty of room for personal stuff in the flats
+                                 thanks to the walk-in closets and abundant storage. Additionally, a few of the Sunstone Palms one-bedroom apartments have unique characteristics such private patios or balconies that provide a tranquil
+                                 outside environment for rest and study. Overall, Sunstone Palms one-bedroom residences offer USF students a cozy and quiet living environment. </p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+                    
+                    
+					
+					<!-- post-->
+                    <div class="all twobr"> 
+                        <div class="post-img">
+                            <a href="https://www.udr.com/tampa-apartments/university-center/cambridge-woods/apartments-pricing/#/?beds=3"><img src="static/images/CambridgeWoods.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">2BR</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Cambridge Woods</h2>
+                            <p>For students who want to live with roommates, Cambridge Woods also provides 2-bedroom apartments. Two separate bedrooms, each with an 
+                                own bathroom, are included in these roomy and cozy apartments. Additionally, there is a communal living area with
+                                 a fully furnished kitchen and a cozy living room. The fully furnished flats offer plenty of room for students to hang out and unwind.</p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+                     <!-- post-->
+                     <div class="all twobr"> 
+                        <div class="post-img">
+                            <a href="https://oakrambletampa.com/"><img src="static/images/OakRambleApartments.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">2BR</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Oak Ramble</h2>
+                            <p>Oaks Ramble has spacious 2-bedroom flats that are ideal for students who want to share a room with another person. Each apartment is thoughtfully
+                                 planned with two distinct bedrooms and bathrooms, a fully equipped kitchen, and a comfortable living area in mind. The bedrooms are well-lit and
+                                  have plenty of storage space in the closets. The communal living area is ideal for unwinding or socializing with friends.
+                                 Furthermore, Oaks Ramble has on-site maintenance and management personnel to ensure that residents receive timely and competent care.</p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+                    <!-- post-->
+                    <div class="all twobr"> 
+                        <div class="post-img">
+                            <a href="https://www.apartments.com/sunstone-palms-apartments-tampa-fl/kjrgskc/"><img src="static/images/SunStoneApartments.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">2BR</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Sunstone Palms</h2>
+                            <p>For students who want to live with a roommate or a small family, Sunstone Palms provides contemporary 2-bedroom flats. The two separate bedrooms and 
+                                bathrooms, the fully furnished kitchen, and the cozy living area are all features of these big and pleasant apartments. Large storage lockers and 
+                                good lighting can be found in the bedrooms. There is plenty of room in the communal living area to unwind or host visitors. Sunstone Palms is the perfect place for students who want
+                                 convenience and luxury, as it also provides a variety of community amenities, such as a resort-style pool, a fitness center, and a clubhouse. </p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+
+                
+
+                    <!-- post-->
+                    <div class="all threebr"> 
+                        <div class="post-img">
+                            <a href="https://www.thelivingstontampa.com/"><img src="static/images/Livingston.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">3BR</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Livingston</h2>
+                            <p>Livingston also offers 2-bedroom apartments that are ideal for students who wish to live with roommates. These apartments are spacious and comfortable, with two separate bedrooms, each with its own private bathroom. The 
+                                apartments are spacious, modern, and fully equipped, with all of the conveniences essential to make students feel at ease. A game room,
+                                 clubhouse, and fitness facility are among the community shared facilities for socializing and studying. Livingston is also pet-friendly, allowing students to
+                                 bring their canine companions with them. The community is strategically located near USF, and the Bull Runner shuttle service provides quick access to school.
+                                 Overall, Livingston provides a nice and convenient living environment for USF students seeking off-campus housing. </p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+                    <!-- post-->
+                    <div class="all threebr"> 
+                        <div class="post-img">
+                            <a href="https://www.udr.com/tampa-apartments/university-center/cambridge-woods/apartments-pricing/#/?beds=3"><img src="static/images/CambridgeWoods.jpg" width="200" height="280" alt="cw"></a>
+                            <span class="category-name">3BR</span>
+                        </div>
+                        <div class="post-cont">
+                            <h2>Cambridge Woods</h2>
+                            <p>Cambridge Woods provides 3-bedroom flats that are ideal for sharing with many roommates for students who desire extra space. The apartments are 
+                                spacious and fully furnished, with three separate bedrooms, each with its own private bathroom, and a communal living area with a fully equipped kitchen
+                                 and a nice living room. The three-bedroom flats give students plenty of space and privacy while also allowing them to connect and form long-lasting friendships. Overall,
+                                 Cambridge Woods is a good choice for students looking for pleasant and convenient off-campus accommodation near the University of South Florida.</p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+                    <!-- post-->
+                    <div class="all threebr"> 
+                        <div class="post-img">
+                            <a href="https://www.eaglespointapts.com/?gad=1&gclid=CjwKCAjw6IiiBhAOEiwALNqncU7gl-05BjW3A22ciHAiJf4E_7OQOzBmIKalaDp2V0nrUoyBf7RjjBoCHa4QAvD_BwE"><img src="static/images/EaglesPointApartments.jpg" width="200" height="280" alt="post"></a>
+                            <span class="category-name">3BR</span>
+                        </div>
+
+                        <div class="post-cont">
+                            <h2>Eagles Point</h2>
+                            <p>Eagles point three-bedroom apartments are ideal for larger groups of students looking to live together.
+                                 These apartments have three distinct bedrooms, each with its own private bathroom, giving each occupant lots of privacy and personal space. 
+                                A convenient location, and amenities such as a clubhouse, exercise center, pool, 
+                                 and tennis court. Eagles Point also offers a shuttle service to campus, making it a fantastic choice for
+                                 students who value convenience and convenient access to classes. Living in Eagles Point gives students with a welcoming and supportive community,
+                                 as well as a variety of amenities tailored to their specific requirements and lifestyle preferences. </p>
+                        </div>
+                    </div>
+                    <!--End of post-->
+
+                     
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h3><img class="logo" src="static/images/logo.png" alt="logo"> Student Housing in Tampa</h3>
+              <p>© 2023 Student Housing Tampa. All rights reserved.</p>
+            </div>
+            <div class="col-md-3">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4>Contact Us</h4>
+              <ul>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="{{url_for('contactus')}}">Email</a></li>
+				<li><a href="{{url_for('contactus')}}">Phone</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="static/JS/advsearch.js"></script>
+
+    </body>
+
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+    <title>STUDENT HOUSING IN TAMPA</title>
+    <link rel="stylesheet" href="static/CSS/signup.css"> 
+    <script src="https://kit.fontawesome.com/4d3bbd6255.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="{{url_for('signup')}}" class="logo-link">STUDENT HOUSING</a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="navbar-item"><a class="navbar-link" href="{{url_for('home')}}">HOME</a></li>
+				<li class="navbar-item"><a class="navbar-link" href="{{url_for('signin')}}" >SIGN IN</a></li>
+				<li class="navbar-item"><a class="navbar-link" href="{{url_for('search')}}" >SEARCH</a></li>
+				<li class="navbar-item"><a class="navbar-link" href="{{url_for('aboutus')}}">ABOUT US</a></li>
+				<li class="navbar-item"><a class="navbar-link" href="{{url_for('contactus')}}">CONTACT US</a></li>
+			</ul>
+
+        
+    </nav>
+
+    <nav class="mobile-nav">
+        <ul class="nav-links">
+            <li class="navbar-item"><a class="navbar-link" href="{{url_for('home')}}">HOME</a></li>
+				<li class="navbar-item"><a class="navbar-link" href="{{url_for('signin')}}" >SIGN IN</a></li>
+				<li class="navbar-item"><a class="navbar-link" href="{{url_for('search')}}" >SEARCH</a></li>
+				<li class="navbar-item"><a class="navbar-link" href="{{url_for('aboutus')}}">ABOUT US</a></li>
+				<li class="navbar-item"><a class="navbar-link" href="{{url_for('contactus')}}">CONTACT US</a></li>
+			 </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+</header>
+<div class="main-container">
+	<div class="quote">
+        <h1>Welcome of Student Housing of Tampa!!!</h1>
+		<blockquote>
+			"Your stay is more than just a place to sleep, it's your home away from home."
+		</blockquote>
+	</div>
+
+<div class="login-container">
+    <div class="form-box">
+        <h1 id="title">Sign Up</h1>
+        <form method="POST" action="{{url_for('signup')}}">
+            <div class="input-grp">
+                <div class="input-field" id="nameField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Name" name="name" id="name">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email" name="email" id="email" >
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password" name="psw" id="psw">
+                </div>
+
+            </div>
+
+            <div class="btn-field">
+                <button type="submit" id="signupBtn">Sign Up</button>
+               
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3><img class="logo" src="static/images/logo.png" alt="logo"> Student Housing in Tampa</h3>
+        <p>© 2023 Student Housing Tampa. All rights reserved.</p>
+      </div>
+      <div class="col-md-3">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+
+
+
+
+</html>

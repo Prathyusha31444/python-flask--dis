@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>STUDENT HOUSING IN TAMPA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="static/CSS/home.css">
+  <link rel="stylesheet" type="text/css" href="static/CSS/bar.css">
+</head>
+<style>
+  .flashes{
+    color: blueviolet;
+  }
+</style>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="{{url_for('home')}}" class="logo-link">STUDENT HOUSING</a>
+      </div>
+
+      <ul class="nav-links">
+        <li class="navbar-item"><a class="navbar-link" href="{{url_for('home')}}">HOME</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="{{url_for('signup')}}">SIGN UP</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="{{url_for('search')}}">SEARCH</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="{{url_for('aboutus')}}">ABOUT US</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="{{url_for('contactus')}}">CONTACT US</a></li>
+      </ul>
+
+
+    </nav>
+
+    <nav class="mobile-nav">
+      <ul class="nav-links">
+        <li class="navbar-item"><a class="navbar-link" href="{{url_for('home')}}">HOME</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="{{url_for('signup')}}">SIGN UP</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="{{url_for('search')}}">SEARCH</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="{{url_for('aboutus')}}">ABOUT US</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="{{url_for('contactus')}}">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+  </header>
+
+  <div class="Search">
+    <div class="title">
+      <div>{% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <a class="close" href="{{url_for('home')}}">×</a>
+        <ul class=flashes>
+          <li>{{ messages[-1] }}</li>
+        </ul>
+        {% endif %}
+        {% endwith %}</div>
+      
+      <h1>STUDENT HOUSING IN TAMPA</h1>
+    </div>
+    <div class="select">
+      <h2>Find your off campus accomodation near your university</h2>
+      <select onchange="location = this.value;" class="bar">
+        <option value="">-------------Select-------------</option>
+        <option value="{{url_for('usf')}}">University of South Florida</option>
+        <option value="{{url_for('ut')}}">University of Tampa</option>
+        <option value="{{url_for('sl')}}">Saint Leo University</a></option>
+      </select>
+    </div>
+  </div>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 12</div>
+      <img src="static/images/AvalonHeights.jpg" width="100%" height="500">
+      <div class="text">Avalon Heights, Near UT</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 12</div>
+      <img src="static/images/CambridgeWoods.jpg" width="100%" height="500">
+      <div class="text">Cambridge Woods, Near USF</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 12</div>
+      <img src="static/images/CityofLacledeLofts.jpg" width="100%" height="500">
+      <div class="text">City of Laclede Lofts, Near SLU</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 12</div>
+      <img src="static/images/EaglesPointApartments.jpg" width="100%" height="500">
+      <div class="text">Eagles Point Apartments, Near USF</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 12</div>
+      <img src="static/images/LakesOfNorthDale.jpg" width="100%" height="500">
+      <div class="text">Lakes of North Dale, Near UT</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 12</div>
+      <img src="static/images/OakRambleApartments.jpg" width="100%" height="500">
+      <div class="text">Oak Ramble Apartments, Near USF</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 12</div>
+      <img src="static/images/SunStoneApartments.jpg" width="100%" height="500">
+      <div class="text">Sun Stone Apartments, Near USF</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">8 / 12</div>
+      <img src="static/images/TheHenry.jpg" width="100%" height="500">
+      <div class="text">The Henry, Near UT</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">9 / 12</div>
+      <img src="static/images/TheStandardApartments.jpg" width="100%" height="500">
+      <div class="text">The Standard Apartments, Near SLU</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">10 / 12</div>
+      <img src="static/images/WestPineLofts.jpg" width="100%" height="500">
+      <div class="text">WestPineLofts, Near SLU</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">11 / 12</div>
+      <img src="static/images/WillowBrookeApartments.jpg" width="100%" height="500">
+      <div class="text">Willow Brooke Apartments, Near UT</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">12 / 12</div>
+      <img src="static/images/WoodwardLofts.jpg" width="100%" height="500">
+      <div class="text">Woodward Lofts, Near SLU</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+    <span class="dot" onclick="currentSlide(12)"></span>
+  </div>
+  <div class="chart-container">
+    <canvas id="myChart"></canvas>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3><img class="logo" src="static/images/logo.png" alt="logo"> Student Housing in Tampa</h3>
+          <p>© 2023 Student Housing Tampa. All rights reserved.</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="{{url_for('contactus')}}">Email</a></li>
+            <li><a href="{{url_for('contactus')}}">Phone</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="static/JS/home.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="static/JS/data.js"></script>
+</body>
+
+</html>
